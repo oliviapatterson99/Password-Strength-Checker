@@ -20,41 +20,41 @@
     <ul>
     <li>
     <% if password.is_minimum_length? %>
-      <p>Meets minimum length requirement</p>
+      <p>✅ Meets minimum length requirement</p>
     <% else %>
-      <p>Must be at least 8 characters</p>
+      <p>❌ Must be at least 8 characters</p>
     <% end %>
     </li>
 
     <li>
     <% if password.contains_number? %>
-      <p>Contains a number</p>
+      <p>✅ Contains a number</p>
     <% else %>
-      <p>Does not contain a number</p>
+      <p>❌ Does not contain a number</p>
     <% end %>
     </li>
 
     <li>
     <% if password.contains_lowercase? %>
-      <p>Contains lowercase letter</p>
+      <p>✅ Contains lowercase letter</p>
     <% else %>
-      <p>Does not contain lowercase letter</p>
+      <p>❌ Does not contain lowercase letter</p>
     <% end %>
     </li>
 
     <li>
     <% if password.contains_uppercase? %>
-      <p>Contains uppercase letter</p>
+      <p>✅ Contains uppercase letter</p>
     <% else %>
-      <p>Does not contain uppercase letter</p>
+      <p>❌ Does not contain uppercase letter</p>
     <% end %>
     </li>
 
     <li>
     <% if password.contains_special_character? %>
-      <p>Contains special character</p>
+      <p>✅ Contains special character</p>
     <% else %>
-      <p>Does not contain special character</p>
+      <p>❌ Does not contain special character</p>
     <% end %>
     </li>
     </ul>
