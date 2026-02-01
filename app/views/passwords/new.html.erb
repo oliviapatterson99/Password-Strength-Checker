@@ -1,14 +1,14 @@
 <% content_for :title, "New password" %>
 <div>
   <div class="space-y-12">
-    <div class="border-b border-white/10 pb-12">
-      <h2 class="text-base/7 font-semibold">New Password</h2>
+    <div class="border-b border-gray-900/10 pb-6">
+      <h2 class="text-base/7 font-semibold text-gray-900">New Password</h2>
       <%= render "form", password: @password %>
     </div>
   </div>
 
-  <div class="flex items-center justify-start gap-x-6">
-    <div class="text-sm/6 font-semibold">
+  <div class="mt-6 flex items-center justify-start gap-x-6">
+    <div class="text-sm/6 font-semibold text-gray-900">
       <%= link_to "Back to passwords", passwords_path %>
     </div>
   </div>

@@ -1,22 +1,25 @@
-<%= form_with(model: password) do |form| %>
-  <% if password.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(password.errors.count, "error") %> prohibited this password from being saved:</h2>
+<div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+  <%= form_with(model: password) do |form| %>
+    <% if password.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(password.errors.count, "error") %> prohibited this password from being saved:</h2>
+        <ul>
+          <% password.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-      <ul>
-        <% password.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+    <div class="sm:col-span-4">
+      <%= form.label :characters, style: "display: block" %>
+      <%= form.text_field :characters, style: "display: flex" %>
+    </div>
+
+    <div class="mt-6 flex items-center justify-start gap-x-6">
+      <div class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        <%= form.submit %>
+      </div>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :characters, style: "display: block" %>
-    <%= form.text_field :characters %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>
