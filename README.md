@@ -65,12 +65,12 @@ I built this project to:
 
 ## 🛣️ Future Improvements
 
-[] Encrypt stored passwords  
-[] User authentication  
-[] Password generator  
-[] Search and filter functionality  
-[] Password categories/tags  
-[] UI/UX improvements  
+- [] Encrypt stored passwords  
+- [] User authentication  
+- [] Password generator  
+- [] Search and filter functionality  
+- [] Password categories/tags  
+- [] UI/UX improvements  
 
 
 ## 📄 License
