@@ -1,0 +1,11 @@
+<% content_for :title, "Editing password" %>
+
+<h1>Editing password</h1>
+
+<%= render "form", password: @password %>
+<%= button_to "Destroy this password", @password, method: :delete %>
+<br>
+
+<div>
+  <%= link_to "Back to passwords", passwords_path %>
+</div>

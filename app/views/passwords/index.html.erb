@@ -1,0 +1,75 @@
+<div>
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Passwords" %>
+<div>
+<h1>Passwords</h1>
+</div>
+
+<div>
+  <% @passwords.each do |password| %>
+    <%= "#{password.id}" + ". " %><%= password.characters %>
+    <% if password.is_strong? %>
+      <p>Strong</p>
+    <% else %>
+      <p>Weak</p>
+    <% end %>
+
+    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+    <div class="text-xl font-medium text-black dark:text-white">
+    <ul>
+    <li>
+    <% if password.is_minimum_length? %>
+      <p>Meets minimum length requirement</p>
+    <% else %>
+      <p>Must be at least 8 characters</p>
+    <% end %>
+    </li>
+
+    <li>
+    <% if password.contains_number? %>
+      <p>Contains a number</p>
+    <% else %>
+      <p>Does not contain a number</p>
+    <% end %>
+    </li>
+
+    <li>
+    <% if password.contains_lowercase? %>
+      <p>Contains lowercase letter</p>
+    <% else %>
+      <p>Does not contain lowercase letter</p>
+    <% end %>
+    </li>
+
+    <li>
+    <% if password.contains_uppercase? %>
+      <p>Contains uppercase letter</p>
+    <% else %>
+      <p>Does not contain uppercase letter</p>
+    <% end %>
+    </li>
+
+    <li>
+    <% if password.contains_special_character? %>
+      <p>Contains special character</p>
+    <% else %>
+      <p>Does not contain special character</p>
+    <% end %>
+    </li>
+    </ul>
+    </div>
+    </div>
+    
+    <p>
+      <%= link_to "Edit this password", edit_password_path(password) %>
+    </p>
+    <p>---</p>
+  <% end %>
+</div>
+<div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+  <div class="text-xl font-medium text-black dark:text-white">
+    <%= link_to "New password", new_password_path %>
+  </div>
+</div>
+</div>
