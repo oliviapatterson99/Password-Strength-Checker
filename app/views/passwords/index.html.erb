@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
 <div>
 <p style="color: green"><%= notice %></p>
 
@@ -15,51 +17,48 @@
       <p>Weak</p>
     <% end %>
 
-    <div class="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
-    <div class="text-xl font-medium text-black dark:text-white">
-    <ul>
-    <li>
-    <% if password.is_minimum_length? %>
-      <p>✅ Meets minimum length requirement</p>
-    <% else %>
-      <p>❌ Must be at least 8 characters</p>
-    <% end %>
-    </li>
+    <el-dropdown class="inline-block">
+      <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-white inset-ring-1 inset-ring-white/5 hover:bg-white/20">
+        Strong Requirements
+        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+          <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+        </svg>
+      </button>
 
-    <li>
-    <% if password.contains_number? %>
-      <p>✅ Contains a number</p>
-    <% else %>
-      <p>❌ Does not contain a number</p>
-    <% end %>
-    </li>
+      <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+        <div class="py-1">
+          <% if password.is_minimum_length? %>
+            <p>✅ Meets minimum length requirement</p>
+          <% else %>
+            <p>❌ Must be at least 8 characters</p>
+          <% end %>
+          
+          <% if password.contains_number? %>
+            <p>✅ Contains a number</p>
+          <% else %>
+            <p>❌ Does not contain a number</p>
+          <% end %>
 
-    <li>
-    <% if password.contains_lowercase? %>
-      <p>✅ Contains lowercase letter</p>
-    <% else %>
-      <p>❌ Does not contain lowercase letter</p>
-    <% end %>
-    </li>
+          <% if password.contains_lowercase? %>
+            <p>✅ Contains lowercase letter</p>
+          <% else %>
+            <p>❌ Does not contain lowercase letter</p>
+          <% end %>
 
-    <li>
-    <% if password.contains_uppercase? %>
-      <p>✅ Contains uppercase letter</p>
-    <% else %>
-      <p>❌ Does not contain uppercase letter</p>
-    <% end %>
-    </li>
+          <% if password.contains_uppercase? %>
+            <p>✅ Contains uppercase letter</p>
+          <% else %>
+            <p>❌ Does not contain uppercase letter</p>
+          <% end %>
 
-    <li>
-    <% if password.contains_special_character? %>
-      <p>✅ Contains special character</p>
-    <% else %>
-      <p>❌ Does not contain special character</p>
-    <% end %>
-    </li>
-    </ul>
-    </div>
-    </div>
+          <% if password.contains_special_character? %>
+            <p>✅ Contains special character</p>
+          <% else %>
+            <p>❌ Does not contain special character</p>
+          <% end %>
+        </div>
+      </el-menu>
+    </el-dropdown>
     
     <p>
       <%= link_to "Edit this password", edit_password_path(password) %>
