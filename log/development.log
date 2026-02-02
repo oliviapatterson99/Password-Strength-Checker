@@ -3058,3 +3058,429 @@ Processing by PasswordsController#edit as HTML
 Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 1.3ms)
 
 
+Started GET "/" for ::1 at 2026-02-02 09:39:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/oliviapatterson/.local/share/mise/installs/ruby/3.4.8/lib/ruby/gems/3.4.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/oliviapatterson/.local/share/mise/installs/ruby/3.4.8/lib/ruby/gems/3.4.0/gems/railties-8.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:39:22 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (1.1ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:12
+  Rendered passwords/index.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | GC: 0.0ms)
+Completed 200 OK in 46ms (Views: 21.1ms | ActiveRecord: 1.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:46:18 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:12
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:48:03 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:49:07 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (1.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 10.6ms | GC: 5.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | GC: 6.6ms)
+Completed 200 OK in 22ms (Views: 14.4ms | ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 11.4ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:52:09 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.4ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:54:07 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:55:48 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (1.0ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | GC: 0.0ms)
+Completed 200 OK in 34ms (Views: 16.4ms | ActiveRecord: 1.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:55:58 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:00 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:01 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:01 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:02 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:42 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:43 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.7ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 5.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 14.4ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:56:56 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:57:08 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:57:11 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:58:18 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 09:58:55 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:01:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.7ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 5.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 14.8ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:02:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (1.0ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | GC: 0.0ms)
+Completed 200 OK in 35ms (Views: 17.0ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:02:40 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:02:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 15.5ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:03:22 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:03:35 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.7ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:04:30 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 7.9ms | GC: 3.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | GC: 12.8ms)
+Completed 200 OK in 23ms (Views: 19.8ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 12.8ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:04:56 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 5.1ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | GC: 1.0ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-02 10:05:01 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 5.3ms | GC: 0.5ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 6.6ms | GC: 0.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | GC: 0.5ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:05:17 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:06:07 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:7
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:06:45 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:12
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-02 10:07:02 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 3.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-02 10:07:36 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 1.8ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 2.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-02 10:07:41 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-02 10:08:02 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.4ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 1.1ms (0 queries, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:08:38 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.7ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:12
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | GC: 0.2ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-02 10:08:42 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:12
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+

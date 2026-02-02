@@ -1,6 +1,9 @@
 <% content_for :title, "Editing password" %>
-
-<h1>Editing password</h1>
+<header class="relative bg-white shadow-sm">
+  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold tracking-tight text-gray-900">Edit this Password</h1>
+  </div>
+</header>
 
 <%= render "form", password: @password %>
 <%= button_to "Destroy this password", @password, method: :delete %>
