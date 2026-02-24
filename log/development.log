@@ -5434,3 +5434,301 @@ Migrating to AddNameToPasswords (20260224160706)
   [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260224160706') RETURNING "version" /*application='PasswordStrengthChecker'*/[0m
   [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PasswordStrengthChecker'*/[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Started GET "/passwords" for ::1 at 2026-02-24 16:16:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 6.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:17:28 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 5.8ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | GC: 1.5ms)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-24 16:17:37 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 2.6ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 5.4ms | GC: 1.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 1.4ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.4ms)
+
+
+Started POST "/passwords" for ::1 at 2026-02-24 16:17:56 +0000
+Processing by PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "password" => "[FILTERED]", "commit" => "Create Password"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+  [1m[36mPassword Create (1.4ms)[0m  [1m[32mINSERT INTO "passwords" ("characters", "strong", "created_at", "updated_at", "name") VALUES ('Pa55word!', NULL, '2026-02-24 16:17:56.787227', '2026-02-24 16:17:56.787227', NULL) RETURNING "id" /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+Redirected to http://localhost:3000/passwords/4
+↳ app/controllers/passwords_controller.rb:28:in 'block (2 levels) in PasswordsController#create'
+Completed 302 Found in 12ms (ActiveRecord: 2.0ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/passwords/4" for ::1 at 2026-02-24 16:17:56 +0000
+Processing by PasswordsController#show as TURBO_STREAM
+  Parameters: {"id" => "4"}
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 4 LIMIT 1 /*action='show',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/show.html.erb within layouts/application
+  Rendered passwords/_password.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered passwords/show.html.erb within layouts/application (Duration: 2.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 3.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:18:01 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.9ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.7ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/passwords/4" for ::1 at 2026-02-24 16:18:50 +0000
+Processing by PasswordsController#show as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mPassword Load (0.1ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 4 LIMIT 1 /*action='show',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/show.html.erb within layouts/application
+  Rendered passwords/_password.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered passwords/show.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.2ms)
+Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:18:55 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-24 16:20:01 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/passwords" for ::1 at 2026-02-24 16:20:11 +0000
+Processing by PasswordsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "password" => "[FILTERED]", "commit" => "Create Password"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+  [1m[36mPassword Create (1.9ms)[0m  [1m[32mINSERT INTO "passwords" ("characters", "strong", "created_at", "updated_at", "name") VALUES ('noiewfiew93M?', NULL, '2026-02-24 16:20:11.776557', '2026-02-24 16:20:11.776557', NULL) RETURNING "id" /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:27:in 'block in PasswordsController#create'
+Redirected to http://localhost:3000/passwords/5
+↳ app/controllers/passwords_controller.rb:28:in 'block (2 levels) in PasswordsController#create'
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/5" for ::1 at 2026-02-24 16:20:11 +0000
+Processing by PasswordsController#show as TURBO_STREAM
+  Parameters: {"id" => "5"}
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 5 LIMIT 1 /*action='show',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/show.html.erb within layouts/application
+  Rendered passwords/_password.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered passwords/show.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:20:14 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 3.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:20:15 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:51:18 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.9ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | GC: 0.5ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/passwords/5/edit" for ::1 at 2026-02-24 16:51:35 +0000
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id" => "5"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 5 LIMIT 1 /*action='edit',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 3.1ms | GC: 0.3ms)
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 4.8ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | GC: 0.3ms)
+Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started DELETE "/passwords/5" for ::1 at 2026-02-24 16:51:37 +0000
+Processing by PasswordsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "id" => "5"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 5 LIMIT 1 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mPassword Destroy (1.1ms)[0m  [1m[31mDELETE FROM "passwords" WHERE "passwords"."id" = 5 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+Redirected to http://localhost:3000/passwords
+↳ app/controllers/passwords_controller.rb:55:in 'block (2 levels) in PasswordsController#destroy'
+Completed 303 See Other in 10ms (ActiveRecord: 2.3ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:51:37 +0000
+Processing by PasswordsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/3/edit" for ::1 at 2026-02-24 16:51:42 +0000
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id" => "3"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 3 LIMIT 1 /*action='edit',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 2.2ms | GC: 0.0ms)
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 3.1ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.4ms)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started DELETE "/passwords/3" for ::1 at 2026-02-24 16:51:44 +0000
+Processing by PasswordsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "id" => "3"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 3 LIMIT 1 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mPassword Destroy (1.2ms)[0m  [1m[31mDELETE FROM "passwords" WHERE "passwords"."id" = 3 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+Redirected to http://localhost:3000/passwords
+↳ app/controllers/passwords_controller.rb:55:in 'block (2 levels) in PasswordsController#destroy'
+Completed 303 See Other in 9ms (ActiveRecord: 1.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:51:44 +0000
+Processing by PasswordsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/passwords/4/edit" for ::1 at 2026-02-24 16:51:49 +0000
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 4 LIMIT 1 /*action='edit',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 2.1ms | GC: 0.0ms)
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/4/edit" for ::1 at 2026-02-24 16:51:49 +0000
+Processing by PasswordsController#edit as HTML
+  Parameters: {"id" => "4"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 4 LIMIT 1 /*action='edit',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/edit.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 2.6ms | GC: 0.0ms)
+  Rendered passwords/edit.html.erb within layouts/application (Duration: 3.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 4.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started DELETE "/passwords/4" for ::1 at 2026-02-24 16:51:51 +0000
+Processing by PasswordsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "id" => "4"}
+  [1m[36mPassword Load (0.3ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" WHERE "passwords"."id" = 4 LIMIT 1 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:63:in 'PasswordsController#set_password'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mPassword Destroy (1.2ms)[0m  [1m[31mDELETE FROM "passwords" WHERE "passwords"."id" = 4 /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='destroy',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/controllers/passwords_controller.rb:52:in 'PasswordsController#destroy'
+Redirected to http://localhost:3000/passwords
+↳ app/controllers/passwords_controller.rb:55:in 'block (2 levels) in PasswordsController#destroy'
+Completed 303 See Other in 9ms (ActiveRecord: 2.6ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:51:51 +0000
+Processing by PasswordsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (0.2ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+

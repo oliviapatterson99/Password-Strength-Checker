@@ -65,6 +65,6 @@ class PasswordsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def password_params
-      params.expect(password: [ :characters, :strong ])
+      params.expect(password: [ :characters, :strong, :name ])
     end
 end

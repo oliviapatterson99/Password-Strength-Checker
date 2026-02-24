@@ -12,6 +12,11 @@
     <% end %>
 
     <div class="sm:col-span-4">
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name, style: "display: flex", :required => 'required' %>
+    </div>
+
+    <div class="sm:col-span-4">
       <%= form.label :characters, style: "display: block" %>
       <%= form.text_field :characters, style: "display: flex", :required => 'required' %>
     </div>
