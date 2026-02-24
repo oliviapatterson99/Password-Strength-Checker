@@ -5395,3 +5395,42 @@ Processing by PasswordsController#index as HTML
 Completed 200 OK in 41ms (Views: 18.5ms | ActiveRecord: 1.6ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/passwords/new" for ::1 at 2026-02-24 16:04:43 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 3.9ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 4.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords/new" for ::1 at 2026-02-24 16:04:43 +0000
+Processing by PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/new.html.erb within layouts/application
+  Rendered passwords/_form.html.erb (Duration: 1.7ms | GC: 0.0ms)
+  Rendered passwords/new.html.erb within layouts/application (Duration: 2.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/passwords" for ::1 at 2026-02-24 16:05:00 +0000
+Processing by PasswordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering passwords/index.html.erb within layouts/application
+  [1m[36mPassword Load (2.8ms)[0m  [1m[34mSELECT "passwords".* FROM "passwords" /*action='index',application='PasswordStrengthChecker',controller='passwords'*/[0m
+  ↳ app/views/passwords/index.html.erb:13
+  Rendered passwords/index.html.erb within layouts/application (Duration: 6.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.0ms)
+Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 2.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='PasswordStrengthChecker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
+Migrating to AddNameToPasswords (20260224160706)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PasswordStrengthChecker'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "passwords" ADD "name" varchar /*application='PasswordStrengthChecker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20260224160706') RETURNING "version" /*application='PasswordStrengthChecker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PasswordStrengthChecker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PasswordStrengthChecker'*/[0m
